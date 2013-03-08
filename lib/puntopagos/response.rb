@@ -25,5 +25,9 @@ module PuntoPagos
       @@puntopagos_base_url + "transaccion/procesar/"+get_token
     end
 
+    def debug_response
+      @@response
+    end
+
   end
 end

@@ -36,6 +36,10 @@ module PuntoPagos
       PuntoPagos::Response.new(response_data, @env)
     end
 
+    def debug
+      "Environment: "+@env+" - "+"Base url: "+ @@puntopagos_base_url
+    end
+
 
 private
 
