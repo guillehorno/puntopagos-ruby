@@ -37,9 +37,12 @@ module PuntoPagos
     end
 
     def debug
-      "Environment: "+@env+" - "+"Base url: "+ @@puntopagos_base_url
+      "Environment: "+@env.to_s+" - "+"Base url: "+ @@puntopagos_base_url
     end
 
+    def debug_config
+      @@config
+    end
 
 private
 
