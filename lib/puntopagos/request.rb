@@ -36,14 +36,6 @@ module PuntoPagos
       PuntoPagos::Response.new(response_data, @env)
     end
 
-    def debug
-      "Environment: "+@env.to_s+" - "+"Base url: "+ @@puntopagos_base_url
-    end
-
-    def debug_config
-      @@config
-    end
-
 private
 
     def create_message trx_id, amount, timestamp
